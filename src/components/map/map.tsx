@@ -5,8 +5,6 @@ import 'leaflet/dist/leaflet.css';
 import { TCity } from '../../types/city';
 import { TPoints } from '../../types/map';
 import useMap from '../../hooks/use-map';
-import { getSrcWithBaseUrl } from '../../utils/utils';
-
 
 type MapProps = {
   city: TCity;
@@ -15,13 +13,13 @@ type MapProps = {
 }
 
 const defaultCustomIcon = new Icon({
-  iconUrl: getSrcWithBaseUrl('img/pin.svg'),
+  iconUrl: 'SixCities/img/pin.svg',
   iconSize: [27, 39],
   iconAnchor: [14, 39]
 });
 
 const currentCustomIcon = new Icon({
-  iconUrl: getSrcWithBaseUrl('img/pin-active.svg'),
+  iconUrl: 'SixCities/img/pin-active.svg',
   iconSize: [27, 39],
   iconAnchor: [14, 39]
 });
