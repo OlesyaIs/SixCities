@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import { NavLink } from 'react-router-dom';
 import { AppRoute } from '../../../const/const';
+import { getSrcWithBaseUrl } from '../../../utils/utils';
 
 type LogoNavLinkProps = {
   isActive: boolean;
@@ -15,7 +16,7 @@ export default function Logo(): React.JSX.Element {
         {'header__logo-link--active': isActive}
       )}
     >
-      <img className="header__logo" src="img/logo.svg" alt="6 cities logo" width="81" height="41" />
+      <img className="header__logo" src={getSrcWithBaseUrl('img/logo.svg')} alt="6 cities logo" width="81" height="41" />
     </NavLink>
   );
 }
