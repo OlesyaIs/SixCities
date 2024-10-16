@@ -7,12 +7,15 @@
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx",
     "preview": "vite preview",
-    "test": "vitest --passWithNoTests"
+    "test": "vitest --passWithNoTests",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@reduxjs/toolkit": "1.9.5",
     "axios": "0.27.2",
     "classnames": "2.3.2",
+    "gh-pages": "^6.2.0",
     "history": "5.3.0",
     "http-status-codes": "2.2.0",
     "leaflet": "1.7.1",

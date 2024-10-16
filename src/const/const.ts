@@ -40,6 +40,7 @@ enum FilterType {
 }
 
 enum AppRoute {
+  Base = '/SixCities',
   Main = '/',
   Login = '/login',
   Favorites = '/favorites',
