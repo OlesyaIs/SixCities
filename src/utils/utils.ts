@@ -1,3 +1,4 @@
+import { BASE_URL } from '../const/api';
 import { ClassnameActionMode } from '../const/mode';
 import { TClassnameActionMode } from '../types/common';
 
@@ -46,6 +47,8 @@ const getRandomArrayItems = <T>(array: T[], itemsAmount: number): T[] => {
   return arrayShallowCopy.slice(0, itemsAmount);
 };
 
+const getSrcWithBaseUrl = (srcString: string, baseUrl: string = BASE_URL): string => `${baseUrl}${srcString}`;
+
 export {
   handleClassName,
   roundToInteger,
@@ -53,5 +56,6 @@ export {
   getRandomInteger,
   shuffleArray,
   getRandomArrayItem,
-  getRandomArrayItems
+  getRandomArrayItems,
+  getSrcWithBaseUrl
 };

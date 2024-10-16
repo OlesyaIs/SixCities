@@ -1,3 +1,4 @@
+const BASE_URL = 'SixCities/';
 const AVATAR_TEMP_URL = 'https://i.pravatar.cc/128';
 const SHOWED_NEARBY_OFFERS_AMOUNT = 3;
 
@@ -56,6 +57,7 @@ enum AuthorizationStatus {
 }
 
 export {
+  BASE_URL,
   AVATAR_TEMP_URL,
   SHOWED_NEARBY_OFFERS_AMOUNT,
   Setting,
